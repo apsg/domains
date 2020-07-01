@@ -18,13 +18,21 @@ Laravel setup helper for DDD approach
 
 ### Basic usage
 
-After fresh installation of Laravel just run Artisan command:
+After fresh installation of Laravel (presumably with --auth option for laravel/ui) just run Artisan command:
 
 ``php artisan ddd:setup``
 
 One can also autogenerate some examples with `--examples` option:
 
 ```php artisan ddd:setup --examples```
+
+### Cleanup
+
+If you are happy with the outcome you can now remove the package entirely since it is no longer needed.
+
+Just run:
+
+``composer remove apsg/domains``
 
 
 [ico-styleci]: https://github.styleci.io/repos/276352493/shield 
