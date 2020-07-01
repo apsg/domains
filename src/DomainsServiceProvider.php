@@ -32,7 +32,7 @@ class DomainsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/domains.php', 'domains');
+        $this->mergeConfigFrom(__DIR__ . '/../config/domains.php', 'domains');
 
         // Register the service the package provides.
         $this->app->singleton('domains', function ($app) {
@@ -59,7 +59,7 @@ class DomainsServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/domains.php' => config_path('domains.php'),
+            __DIR__ . '/../config/domains.php' => config_path('domains.php'),
         ], 'domains.config');
 
         // Publishing the views.
