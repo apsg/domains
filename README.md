@@ -1,6 +1,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![StyleCI Status][ico-styleci]][link-styleci]
+[![StyleCI][ico-styleci]][link-styleci] 
 
 # Laravel DDD
 Laravel setup helper for DDD approach
