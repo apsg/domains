@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\File;
 
 class SetupDomainsCommand extends Command
 {
-    protected $signature = "ddd:setup {--examples}";
+    protected $signature = 'ddd:setup {--examples}';
 
     public function handle()
     {
@@ -90,7 +90,7 @@ class SetupDomainsCommand extends Command
         );
 
         $this->appendToFile('routes/web.php',
-            "// Simplify the FQN for me here please..."
+            '// Simplify the FQN for me here please...'
             . PHP_EOL
             . "Route::get('domain/example', App\Domains\Example\Controllers\ExampleController::class . '@example');"
         );
