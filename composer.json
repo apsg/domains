@@ -1,16 +1,16 @@
 {
     "name": "apsg/domains",
-    "description": ":package_description",
-    "license": "license",
+    "description": "Setup helper for DDD approach in Laravel",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Szymon Gackowski",
+            "email": "szymon@gackowski.edu.pl",
+            "homepage": "http://gackowski.edu.pl"
         }
     ],
     "homepage": "https://github.com/apsg/domains",
-    "keywords": ["Laravel", "Domains"],
+    "keywords": ["Laravel", "Domains", "DDD"],
     "require": {
         "illuminate/support": "~5|~6|~7"
     },
