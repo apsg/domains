@@ -3,6 +3,7 @@ namespace Apsg\Domains\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class SetupDomainsCommand extends Command
 {
@@ -10,8 +11,11 @@ class SetupDomainsCommand extends Command
 
     public function handle()
     {
-        $this->fixRouteServiceProvider();
-        $this->fixAuthRoutes();
+        if (!Str::startsWith(app()->version(), '8')) {
+            // This is not needed in v.8
+            $this->fixRouteServiceProvider();
+            $this->fixAuthRoutes();
+        }
 
         $this->generateDirectories();
 

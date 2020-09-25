@@ -3,7 +3,9 @@
 [![StyleCI][ico-styleci]][link-styleci] 
 
 # Laravel DDD
-Laravel setup helper for DDD approach
+Laravel (5,6,7) setup helper for DDD approach
+
+## This package became pretty obsolete with introduction of Laravel 8, so no further updates would be provided.
 
 #### What it does?
 
