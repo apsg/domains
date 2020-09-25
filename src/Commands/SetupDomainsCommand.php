@@ -11,7 +11,7 @@ class SetupDomainsCommand extends Command
 
     public function handle()
     {
-        if (!Str::startsWith(app()->version(), '8')) {
+        if (! Str::startsWith(app()->version(), '8')) {
             // This is not needed in v.8
             $this->fixRouteServiceProvider();
             $this->fixAuthRoutes();
